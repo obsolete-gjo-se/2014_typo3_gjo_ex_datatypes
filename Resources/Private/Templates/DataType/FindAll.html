@@ -1,0 +1,34 @@
+<f:layout name="Default"/>
+
+<f:section name="main">
+
+    <table class="table table-hover">
+
+        <thead>
+        <tr class="warning">
+            <td colspan="2">Table: tx_gjoexdatatypes_domain_model_datatype ({dataTypes -> f:count()})</td>
+        </tr>
+        <tr>
+            <th>UID
+            </th>
+            <th>Label: stringWithoutBreak
+            </th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <f:for each="{dataTypes}" as="dataTypeValue">
+            <tr>
+                <td>
+                    {dataTypeValue.uid}
+                </td>
+                <td>
+                    {dataTypeValue.stringWithoutBreak}
+                </td>
+            </tr>
+        </f:for>
+        </tbody>
+
+    </table>
+
+</f:section>
