@@ -6,9 +6,11 @@
 
         <thead>
         <tr class="warning">
-            <td colspan="3">Table: tx_gjoexdatatypes_domain_model_datatype ({dataTypes -> f:count()})</td>
+            <td colspan="4">Table: tx_gjoexdatatypes_domain_model_datatype ({dataTypes -> f:count()})</td>
         </tr>
         <tr>
+            <th><f:link.action action="addForm"><span class="glyphicon glyphicon-plus"></span></f:link.action>
+            </th>
             <th>UID
             </th>
             <th>Label: stringWithoutBreak
@@ -19,6 +21,8 @@
         <tbody>
         <f:for each="{dataTypes}" as="dataTypeValue">
             <tr>
+                <td>
+                </td>
                 <td>
                     {dataTypeValue.uid}
                 </td>

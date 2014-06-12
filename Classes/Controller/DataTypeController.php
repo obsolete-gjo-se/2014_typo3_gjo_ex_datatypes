@@ -26,4 +26,19 @@ class DataTypeController extends ActionController
     public function showAction(DataType $dataType) {
         $this->view->assign('dataType', $dataType);
     }
+
+    /**
+     * @return void
+     */
+    public function addFormAction() {
+    }
+
+    /**
+     * @param \Gjo\GjoExDatatypes\Domain\Model\DataType $addForm
+     * @return void
+     */
+    public function addAction(DataType $addForm) {
+        $this->dataTypeRepository->add($addForm);
+        $this->redirect('findAll');
+    }
 }
