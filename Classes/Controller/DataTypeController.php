@@ -1,5 +1,5 @@
 <?php
-namespace Gjo\GjoExDataTypes\Controller;
+namespace Gjo\GjoExDatatypes\Controller;
 
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
