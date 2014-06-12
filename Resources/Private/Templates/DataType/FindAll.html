@@ -6,7 +6,7 @@
 
         <thead>
         <tr class="warning">
-            <td colspan="2">Table: tx_gjoexdatatypes_domain_model_datatype ({dataTypes -> f:count()})</td>
+            <td colspan="3">Table: tx_gjoexdatatypes_domain_model_datatype ({dataTypes -> f:count()})</td>
         </tr>
         <tr>
             <th>UID
@@ -24,6 +24,9 @@
                 </td>
                 <td>
                     {dataTypeValue.stringWithoutBreak}
+                </td>
+                <td>
+                    <f:link.action action="show" arguments="{dataType : dataTypeValue}"><span class="glyphicon glyphicon-info-sign"></span></f:link.action>
                 </td>
             </tr>
         </f:for>
