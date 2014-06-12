@@ -1,5 +1,5 @@
 <?php
-namespace Gjo\GjoExDataTypes\Domain\Repository;
+namespace Gjo\GjoExDatatypes\Domain\Repository;
 
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
