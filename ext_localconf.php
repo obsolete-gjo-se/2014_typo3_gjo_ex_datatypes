@@ -5,6 +5,10 @@ if (!defined ('TYPO3_MODE')) die ('Access denied.');
     'Gjo.' .
     $_EXTKEY,
     'ExDataTypes',
-    array(),
-    array()
+    array(
+        'DataType' => 'findAll'
+    ),
+    array(
+        'DataType' => 'findAll'
+    )
 );
