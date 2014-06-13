@@ -6,7 +6,7 @@
 
         <thead>
         <tr class="warning">
-            <td colspan="5">Table: tx_gjoexdatatypes_domain_model_datatype ({dataTypes -> f:count()})</td>
+            <td colspan="6">Table: tx_gjoexdatatypes_domain_model_datatype ({dataTypes -> f:count()})</td>
         </tr>
         <tr>
             <th><f:link.action action="addForm"><span class="glyphicon glyphicon-plus"></span></f:link.action>
@@ -18,6 +18,8 @@
             <th>Detail
             </th>
             <th>Update
+            </th>
+            <th>Remove
             </th>
         </tr>
         </thead>
@@ -38,6 +40,9 @@
                 </td>
                 <td>
                     <f:link.action action="updateForm" arguments="{dataType : dataTypeValue}"><span class="glyphicon glyphicon-pencil"></span></f:link.action>
+                </td>
+                <td>
+                    <f:link.action action="remove" arguments="{dataType : dataTypeValue}"><span class="glyphicon glyphicon-trash"></span></f:link.action>
                 </td>
             </tr>
         </f:for>

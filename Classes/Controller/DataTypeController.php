@@ -58,4 +58,13 @@ class DataTypeController extends ActionController
         $this->dataTypeRepository->update($updateForm);
         $this->redirect('findAll');
     }
+
+    /**
+     * @param \Gjo\GjoExDatatypes\Domain\Model\DataType $dataType
+     * @return void
+     */
+    public function removeAction(DataType $dataType){
+        $this->dataTypeRepository->remove($dataType);
+        $this->redirect('findAll');
+    }
 }
