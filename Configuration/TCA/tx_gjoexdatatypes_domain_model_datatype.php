@@ -55,6 +55,17 @@ return array(
                 ),
             ),
         ),
+        'select_single_db' => array(
+            'label' => 'Label: selectSingleDb',
+            'config' => array(
+                'type' => 'select',
+                'foreign_table' => 'tx_gjoexdatatypes_domain_model_month',
+                'foreign_table_where' => 'ORDER BY tx_gjoexdatatypes_domain_model_month.uid',
+                'items' => array(
+                    array('-- Bitte wählen --', 0)
+                ),
+            ),
+        ),
     ),
 
     'types' => array(
@@ -65,6 +76,7 @@ return array(
                 password,
                 number_integer,
                 select_single,
+                select_single_db,
                 '),
     ),
 
@@ -75,5 +87,6 @@ return array(
             password,
             number_integer,
             select_single,
+            select_single_db,
             ',),
 );
