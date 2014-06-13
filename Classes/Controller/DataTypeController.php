@@ -13,6 +13,12 @@ class DataTypeController extends ActionController
     protected $dataTypeRepository;
 
     /**
+     * @var \Gjo\GjoExDatatypes\Domain\Repository\MonthRepository
+     * @inject
+     */
+    protected $monthRepository;
+
+    /**
      * @return void
      */
     public function findAllAction() {
@@ -31,6 +37,7 @@ class DataTypeController extends ActionController
      * @return void
      */
     public function addFormAction() {
+        $this->view->assign('months', $this->monthRepository->findAll());
     }
 
     /**
@@ -47,6 +54,7 @@ class DataTypeController extends ActionController
      * @return void
      */
     public function updateFormAction(DataType $dataType) {
+        $this->view->assign('months', $this->monthRepository->findAll());
         $this->view->assign('dataType', $dataType);
     }
 

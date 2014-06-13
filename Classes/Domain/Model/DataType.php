@@ -2,6 +2,7 @@
 namespace Gjo\GjoExDatatypes\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use Gjo\GjoExDatatypes\Domain\Model\Month;
 
 class DataType extends AbstractEntity
 {
@@ -36,6 +37,11 @@ class DataType extends AbstractEntity
      * @validate Integer
      */
     protected $selectSingle = 0;
+
+    /**
+     * @var \Gjo\GjoExDatatypes\Domain\Model\Month
+     */
+    protected $selectSingleDb = NULL;
 
     /**
      * @param string $stringWithoutBreak
@@ -120,5 +126,22 @@ class DataType extends AbstractEntity
     public function getSelectSingle()
     {
         return $this->selectSingle;
+    }
+
+    /**
+     * @param \Gjo\GjoExDatatypes\Domain\Model\Month $month
+     * @return void
+     */
+    public function setSelectSingleDb(Month $month = NULL)
+    {
+        $this->selectSingleDb = $month;
+    }
+
+    /**
+     * @return \Gjo\GjoExDatatypes\Domain\Model\Month
+     */
+    public function getSelectSingleDb()
+    {
+        return $this->selectSingleDb;
     }
 }
