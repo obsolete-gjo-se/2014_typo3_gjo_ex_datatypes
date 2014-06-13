@@ -17,17 +17,25 @@ return array(
                 'max' => '30',
             ),
         ),
+        'string_with_break' => array(
+            'label' => 'Label: stringWithBreak',
+            'config' => array(
+                'type' => 'text',
+            ),
+        ),
     ),
 
     'types' => array(
         '1' => array(
             'showitem' => '
                 string_without_break,
+                string_with_break,
                 '),
     ),
 
     'interface' => array(
         'showRecordFieldList' => '
             string_without_break,
+            string_with_break,
             ',),
 );
