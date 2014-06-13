@@ -19,6 +19,12 @@ class DataType extends AbstractEntity
     protected $stringWithBreak = '';
 
     /**
+     * @var string
+     * @validate RegularExpression(regularExpression="/^.{0,20}$/u")
+     */
+    protected $password = '';
+
+    /**
      * @param string $stringWithoutBreak
      * @return void
      */
@@ -50,5 +56,22 @@ class DataType extends AbstractEntity
     public function getStringWithBreak()
     {
         return $this->stringWithBreak;
+    }
+
+    /**
+     * @param string $password
+     * @return void
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->password;
     }
 }
