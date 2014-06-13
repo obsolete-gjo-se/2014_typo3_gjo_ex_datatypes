@@ -43,6 +43,18 @@ return array(
                 ),
             ),
         ),
+        'select_single' => array(
+            'label' => 'Label: selectSingle',
+            'config' => array(
+                'type' => 'select',
+                'items' => array(
+                    array('-- Bitte wählen --', 0),
+                    array('Januar', 1),
+                    array('Februar', 2),
+                    array('März', 3),
+                ),
+            ),
+        ),
     ),
 
     'types' => array(
@@ -52,6 +64,7 @@ return array(
                 string_with_break,
                 password,
                 number_integer,
+                select_single,
                 '),
     ),
 
@@ -60,6 +73,7 @@ return array(
             string_without_break,
             string_with_break,
             password,
-            number_integer
+            number_integer,
+            select_single,
             ',),
 );
