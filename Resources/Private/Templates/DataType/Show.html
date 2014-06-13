@@ -23,6 +23,12 @@
             <td>{dataType.stringWithBreak -> f:format.nl2br()}
             </td>
         </tr>
+        <tr>
+            <td>Label: password
+            </td>
+            <td>{f:if(condition: dataType.password, then: '*******', else: 'Kein Passwort vergeben')}
+            </td>
+        </tr>
         </tbody>
 
     </table>
