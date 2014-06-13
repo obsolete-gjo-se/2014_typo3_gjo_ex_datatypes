@@ -25,6 +25,13 @@ class DataType extends AbstractEntity
     protected $password = '';
 
     /**
+     * @var int
+     * @validate Integer
+     * @validate NumberRange(minimum="0", maximum="999999")
+     */
+    protected $numberInteger = 0;
+
+    /**
      * @param string $stringWithoutBreak
      * @return void
      */
@@ -73,5 +80,23 @@ class DataType extends AbstractEntity
     public function getPassword()
     {
         return $this->password;
+    }
+
+    /**
+     * @param int $numberInteger
+     * @return void
+     */
+    public function setNumberInteger($numberInteger)
+    {
+        $this->numberInteger = $numberInteger;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNumberInteger()
+    {
+        return $this->numberInteger;
+
     }
 }
