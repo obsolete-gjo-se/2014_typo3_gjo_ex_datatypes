@@ -13,6 +13,12 @@ class DataType extends AbstractEntity
     protected $stringWithoutBreak = '';
 
     /**
+     * @var string
+     * @validate RegularExpression(regularExpression="/^.{0,100}$/us")
+     */
+    protected $stringWithBreak = '';
+
+    /**
      * @param string $stringWithoutBreak
      * @return void
      */
@@ -27,5 +33,22 @@ class DataType extends AbstractEntity
     public function getStringWithoutBreak()
     {
         return $this->stringWithoutBreak;
+    }
+
+    /**
+     * @param string $stringWithBreak
+     * @return void
+     */
+    public function setStringWithBreak($stringWithBreak)
+    {
+        $this->stringWithBreak = $stringWithBreak;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStringWithBreak()
+    {
+        return $this->stringWithBreak;
     }
 }
