@@ -29,6 +29,12 @@
             <td>{f:if(condition: dataType.password, then: '*******', else: 'Kein Passwort vergeben')}
             </td>
         </tr>
+        <tr>
+            <td>Label: numberInteger
+            </td>
+            <td>{dataType.numberInteger -> f:format.number(decimals: 0, thousandsSeparator: '.')}
+            </td>
+        </tr>
         </tbody>
 
     </table>
