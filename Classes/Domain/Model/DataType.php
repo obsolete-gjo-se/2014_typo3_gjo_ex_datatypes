@@ -32,6 +32,12 @@ class DataType extends AbstractEntity
     protected $numberInteger = 0;
 
     /**
+     * @var int
+     * @validate Integer
+     */
+    protected $selectSingle = 0;
+
+    /**
      * @param string $stringWithoutBreak
      * @return void
      */
@@ -97,6 +103,22 @@ class DataType extends AbstractEntity
     public function getNumberInteger()
     {
         return $this->numberInteger;
+    }
 
+    /**
+     * @param int $selectSingle
+     * @return void
+     */
+    public function setSelectSingle($selectSingle)
+    {
+        $this->selectSingle = $selectSingle;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSelectSingle()
+    {
+        return $this->selectSingle;
     }
 }
