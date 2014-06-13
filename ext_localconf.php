@@ -6,9 +6,9 @@ if (!defined ('TYPO3_MODE')) die ('Access denied.');
     $_EXTKEY,
     'ExDataTypes',
     array(
-        'DataType' => 'findAll, show, addForm, add'
+        'DataType' => 'findAll, show, addForm, add, updateForm, update'
     ),
     array(
-        'DataType' => 'findAll, show, addForm, add'
+        'DataType' => 'findAll, show, addForm, add, updateForm, update'
     )
 );
