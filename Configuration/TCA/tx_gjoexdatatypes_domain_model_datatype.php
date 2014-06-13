@@ -28,7 +28,6 @@ return array(
             'config' => array(
                 'type' => 'input',
                 'eval' => 'password',
-                'min' => '6',
                 'max' => '20',
             ),
         ),
