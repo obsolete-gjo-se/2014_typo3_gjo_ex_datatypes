@@ -1,3 +1,4 @@
+{namespace v=Tx_Vhs_ViewHelpers}
 <f:layout name="Default"/>
 
 <f:section name="main">
@@ -33,6 +34,26 @@
             <td>Label: numberInteger
             </td>
             <td>{dataType.numberInteger -> f:format.number(decimals: 0, thousandsSeparator: '.')}
+            </td>
+        </tr>
+        <tr>
+            <td>Label: selectSingle
+            </td>
+            <td>
+                <v:switch value="{dataType.selectSingle}">
+                    <v:case case="0" break="TRUE">
+                        keine Auswahl getroffen
+                    </v:case>
+                    <v:case case="1" break="TRUE">
+                        Januar
+                    </v:case>
+                    <v:case case="2" break="TRUE">
+                        Februar
+                    </v:case>
+                    <v:case case="1" break="TRUE">
+                        März
+                    </v:case>
+                </v:switch>
             </td>
         </tr>
         </tbody>
