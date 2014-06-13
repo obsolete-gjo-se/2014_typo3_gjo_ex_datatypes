@@ -31,6 +31,18 @@ return array(
                 'max' => '20',
             ),
         ),
+        'number_integer' => array(
+            'label' => 'Label: numberInteger',
+            'config' => array(
+                'type' => 'input',
+                'eval' => 'int',
+                'max' => '6',
+                'range' => array(
+                    'lower' => 0,
+                    'upper' => 999999
+                ),
+            ),
+        ),
     ),
 
     'types' => array(
@@ -39,6 +51,7 @@ return array(
                 string_without_break,
                 string_with_break,
                 password,
+                number_integer,
                 '),
     ),
 
@@ -47,5 +60,6 @@ return array(
             string_without_break,
             string_with_break,
             password,
+            number_integer
             ',),
 );
