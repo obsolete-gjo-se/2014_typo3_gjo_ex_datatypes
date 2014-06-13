@@ -23,6 +23,15 @@ return array(
                 'type' => 'text',
             ),
         ),
+        'password' => array(
+            'label' => 'Label: password',
+            'config' => array(
+                'type' => 'input',
+                'eval' => 'password',
+                'min' => '6',
+                'max' => '20',
+            ),
+        ),
     ),
 
     'types' => array(
@@ -30,6 +39,7 @@ return array(
             'showitem' => '
                 string_without_break,
                 string_with_break,
+                password,
                 '),
     ),
 
@@ -37,5 +47,6 @@ return array(
         'showRecordFieldList' => '
             string_without_break,
             string_with_break,
+            password,
             ',),
 );
