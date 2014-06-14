@@ -8,6 +8,7 @@ CREATE TABLE tx_gjoexdatatypes_domain_model_datatype (
   number_integer int(11) NOT NULL DEFAULT '0',
   select_single int(11) NOT NULL DEFAULT '0',
   select_single_db int(11) NOT NULL DEFAULT '0',
+  checkbox_single tinyint(1) NOT NULL DEFAULT '0',
 
   PRIMARY KEY (uid),
   KEY parent (pid),

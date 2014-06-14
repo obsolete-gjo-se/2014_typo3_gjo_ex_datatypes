@@ -66,6 +66,12 @@ return array(
                 ),
             ),
         ),
+        'checkbox_single' => array(
+            'label' => 'Label: checkboxSingle',
+            'config' => array(
+                'type' => 'check',
+            ),
+        ),
     ),
 
     'types' => array(
@@ -77,6 +83,7 @@ return array(
                 number_integer,
                 select_single,
                 select_single_db,
+                checkbox_single,
                 '),
     ),
 
@@ -88,5 +95,6 @@ return array(
             number_integer,
             select_single,
             select_single_db,
+            checkbox_single
             ',),
 );
