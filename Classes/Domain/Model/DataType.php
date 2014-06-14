@@ -50,6 +50,12 @@ class DataType extends AbstractEntity
     protected $checkboxSingle = 0;
 
     /**
+     * @var int
+     * @validate Integer
+     */
+    protected $radioMulti = 0;
+
+    /**
      * @param string $stringWithoutBreak
      * @return void
      */
@@ -166,5 +172,22 @@ class DataType extends AbstractEntity
     public function getCheckboxSingle()
     {
         return $this->checkboxSingle;
+    }
+
+    /**
+     * @param int $radioMulti
+     * @return void
+     */
+    public function setRadioMulti($radioMulti)
+    {
+        $this->radioMulti = $radioMulti;
+    }
+
+    /**
+     * @return int
+     */
+    public function getRadioMulti()
+    {
+        return $this->radioMulti;
     }
 }

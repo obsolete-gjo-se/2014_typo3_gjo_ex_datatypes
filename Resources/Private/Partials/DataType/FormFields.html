@@ -67,3 +67,20 @@
         </label>
     </div>
 </div>
+
+<div class="form-group">
+    <label for="radioMulti" class="col-sm-2 control-label">radioMulti</label>
+    <div class="col-sm-10">
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default {f:if(condition: '{dataType.radioMulti} == 1', then: 'active')}">
+                <f:form.radio property="radioMulti" value="1"  />Januar
+            </label>
+            <label class="btn btn-default {f:if(condition: '{dataType.radioMulti} == 2', then: 'active')}">
+                <f:form.radio property="radioMulti" value="2" />Februar
+            </label>
+            <label class="btn btn-default {f:if(condition: '{dataType.radioMulti} == 3', then: 'active')}">
+                <f:form.radio property="radioMulti" value="3" />März
+            </label>
+        </div>
+    </div>
+</div>
