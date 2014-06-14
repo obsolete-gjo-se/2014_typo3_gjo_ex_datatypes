@@ -72,6 +72,17 @@ return array(
                 'type' => 'check',
             ),
         ),
+        'radio_multi' => array(
+            'label' => 'Label: radioMulti',
+            'config' => array(
+                'type' => 'radio',
+                'items' => array(
+                    array('Januar', 1),
+                    array('Februar', 2),
+                    array('März', 3),
+                ),
+            ),
+        ),
     ),
 
     'types' => array(
@@ -84,6 +95,7 @@ return array(
                 select_single,
                 select_single_db,
                 checkbox_single,
+                radio_multi,
                 '),
     ),
 
@@ -95,6 +107,7 @@ return array(
             number_integer,
             select_single,
             select_single_db,
-            checkbox_single
+            checkbox_single,
+            radio_multi
             ',),
 );

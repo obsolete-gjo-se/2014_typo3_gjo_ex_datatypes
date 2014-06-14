@@ -9,6 +9,7 @@ CREATE TABLE tx_gjoexdatatypes_domain_model_datatype (
   select_single int(11) NOT NULL DEFAULT '0',
   select_single_db int(11) NOT NULL DEFAULT '0',
   checkbox_single tinyint(1) NOT NULL DEFAULT '0',
+  radio_multi tinyint(3) NOT NULL DEFAULT '0',
 
   PRIMARY KEY (uid),
   KEY parent (pid),
