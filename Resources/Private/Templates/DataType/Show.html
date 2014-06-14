@@ -50,7 +50,7 @@
                     <v:case case="2" break="TRUE">
                         Februar
                     </v:case>
-                    <v:case case="1" break="TRUE">
+                    <v:case case="3" break="TRUE">
                         März
                     </v:case>
                 </v:switch>
@@ -66,6 +66,26 @@
             <td>Label: checkboxSingle
             </td>
             <td>{f:if(condition: dataType.checkboxSingle, then: 'ja', else: 'nein')}
+            </td>
+        </tr>
+        <tr>
+            <td>Label: radioMulti
+            </td>
+            <td>
+                <v:switch value="{dataType.radioMulti}">
+                    <v:case case="0" break="TRUE">
+                        keine Auswahl getroffen
+                    </v:case>
+                    <v:case case="1" break="TRUE">
+                        Januar
+                    </v:case>
+                    <v:case case="2" break="TRUE">
+                        Februar
+                    </v:case>
+                    <v:case case="3" break="TRUE">
+                        März
+                    </v:case>
+                </v:switch>
             </td>
         </tr>
         </tbody>
