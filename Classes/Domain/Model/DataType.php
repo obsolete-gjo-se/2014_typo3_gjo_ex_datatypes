@@ -44,6 +44,12 @@ class DataType extends AbstractEntity
     protected $selectSingleDb = NULL;
 
     /**
+     * @var int
+     * @validate Integer
+     */
+    protected $checkboxSingle = 0;
+
+    /**
      * @param string $stringWithoutBreak
      * @return void
      */
@@ -143,5 +149,22 @@ class DataType extends AbstractEntity
     public function getSelectSingleDb()
     {
         return $this->selectSingleDb;
+    }
+
+    /**
+     * @param int $checkboxSingle
+     * @return void
+     */
+    public function setCheckboxSingle($checkboxSingle)
+    {
+        $this->checkboxSingle = $checkboxSingle;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCheckboxSingle()
+    {
+        return $this->checkboxSingle;
     }
 }
